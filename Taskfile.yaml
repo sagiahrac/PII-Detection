@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+
+  create-env:
+    cmds:
+      - mamba env create -f env.yaml
+
+  prepare-competition-data:
+    cmds:
+      - mkdir data
+      - mkdir data/raw
+      - mkdir data/zipped
+      - kaggle competitions download -c pii-detection-removal-from-educational-data -p data/zipped
+      - unzip data/zipped/pii-detection-removal-from-educational-data.zip -d data/raw
+  
+  

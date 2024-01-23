@@ -1,5 +1,6 @@
-import pandas as pd
 import json
+
+import pandas as pd
 
 
 def read_tokens_df(path: str) -> pd.DataFrame:

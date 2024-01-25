@@ -6,3 +6,12 @@
 4. Run chmod 600 ~/.kaggle/kaggle.json
 5. Get competition data with `task prepare-competition-data`
 6. Run notebooks by order
+
+
+## Goals
+
+- [ ] Seek for more data
+- [ ] Create a data generator
+- [ ] Generate data
+- [ ] Gain a 100% recall classifier with not too low precision.
+- [ ] Train LLM classifier over the classified tokens.

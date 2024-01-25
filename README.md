@@ -8,7 +8,7 @@
 6. Run notebooks by order
 
 
-## Goals
+## TODO
 
 - [ ] Seek for more data
 - [ ] Create a data generator

@@ -28,6 +28,7 @@ dependencies = [
     "faker",
     "imblearn",
     "spacy",
+    "pydantic",
 ]
 
 

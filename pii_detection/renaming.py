@@ -1,5 +1,7 @@
 from faker import Faker
 
+from pii_detection.gen_data_utils import convert_tokens_to_text
+
 fake = Faker()
 
 
@@ -9,15 +11,6 @@ def rename_token(token: str):
     elif token.startswith("I"):
         new_token = fake.unique.last_name()
     return new_token
-
-
-def convert_to_text(tokens, whitespaces):
-    text = []
-    for token, whitespace in zip(tokens, whitespaces):
-        text.append(token)
-        if whitespace:
-            text.append(" ")
-    return "".join(text)
 
 
 def modify_names_in_essay(essay):
@@ -31,7 +24,7 @@ def modify_names_in_essay(essay):
         else:
             new_tokens.append(token)
 
-    new_full_text = convert_to_text(new_tokens, essay["trailing_whitespace"])
+    new_full_text = convert_tokens_to_text(new_tokens, essay["trailing_whitespace"])
     essay["full_text"] = new_full_text
     essay["tokens"] = new_tokens
     return essay

@@ -1,5 +1,7 @@
 **/__pycache__
 data
+kaggle.json
+secret.txt
 pii_detection.egg-info
 .vscode
 *.csv

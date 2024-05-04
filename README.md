@@ -1,17 +1,10 @@
-## Get Started
+## IMPORTANT!
 
-1. Create env: install [go-task](https://taskfile.dev/) with `mamba install go-task`. To create env, run `task create-env`. Make sure it is activated.
-2. Create new kaggle token from https://www.kaggle.com/settings/account
-3. Ensure kaggle.json is in the location ~/.kaggle/kaggle.json to use the API.
-4. Run chmod 600 ~/.kaggle/kaggle.json
-5. Get competition data with `task prepare-competition-data`
-6. Run notebooks by order
+The notebooks in this repository can be run out of the box with kaggle notebooks. For running them, copy & edit the public notebook on kaggle website:
 
-
-## TODO
-
-- [ ] Seek for more data
-- [ ] Create a data generator
-- [ ] Generate data
-- [ ] Gain a 100% recall classifier with not too low precision.
-- [ ] Train LLM classifier over the classified tokens.
+1. Stratified Split - https://www.kaggle.com/code/sagiah/1-stratified-split
+2. Probe Feature - https://www.kaggle.com/code/sagiah/2-probe-features
+3. Probe Labels - https://www.kaggle.com/code/sagiah/3-probe-labels
+4. Data Augmentation - https://www.kaggle.com/code/sagiah/4-data-augmentation
+5. Dataset (source code) - https://www.kaggle.com/code/sagiah/my-dataset
+6. Model (source code) - https://www.kaggle.com/code/sagiah/my-model

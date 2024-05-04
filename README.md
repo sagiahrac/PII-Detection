@@ -10,3 +10,4 @@ The notebooks in this repository can be run out of the box with kaggle notebooks
 6. Model (source code) - https://www.kaggle.com/code/sagiah/my-model
 7. Training - https://www.kaggle.com/code/sagiah/training
 8. Inference (external notebook) - https://www.kaggle.com/code/sagiah/inference-external-notebook
+9. Workshop Demo (inference) - https://www.kaggle.com/code/sagiah/workshop-demo-inference
